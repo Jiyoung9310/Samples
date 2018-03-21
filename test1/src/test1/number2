@@ -1,0 +1,61 @@
+
+public class javaTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String[] exp = {"722/148+360/176",
+				"978/1212+183/183",
+				"358/472+301/417",
+				"780/309+684/988",
+				"258/840+854/686"};
+		String[] result = new String[exp.length];
+		
+		int n = 0;
+        while (n < exp.length) {
+            String s = exp[n];
+            String[] ss = s.split("\\+");				// [722/148] [360/176]
+            String[] sss = ss[0].split("\\/");			// [722][148]
+            String[] sss2 = ss[1].split("\\/");			// [360][176]
+            
+            // (sss[0]*sss2[1]+sss2[0]*sss[1])/sss[1]*sss2[1]
+            int a = Integer.parseInt(sss[0]);
+            int A = Integer.parseInt(sss[1]);
+            int b = Integer.parseInt(sss2[0]);
+            int B = Integer.parseInt(sss2[1]);
+            
+            int child = a*B + b*A;
+            int parent = A*B;
+            
+            int num1;
+            int num2;
+            if(child>parent) {
+            	num1 = child;
+            	num2 = parent;
+            } else {
+            	num1 = parent;
+            	num2 = child;
+            }
+            
+            int Z = 0;
+            while(true) {
+            	int r = num1%num2;
+            	if(r == 0) {
+            		Z = num2;
+            		break;
+            	} else {
+            		num1 = num2;
+            		num2 = r;
+            	}
+            }
+            
+            child /= Z;
+            parent /= Z;
+            result[n] = child+"/"+parent;
+            System.out.println(result[n]);
+            
+            n++;
+        }
+        
+     }
+    
+}

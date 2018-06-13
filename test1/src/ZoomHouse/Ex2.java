@@ -1,6 +1,26 @@
-Ex2
+ï»¿package Zoom;
 
-// 1, 2¹øÂ° ¹®ÀÚ¸¦ È®ÀÎ
-// º¯Çü °¡´ÉÇÏ¸é º¯Çü
-// º¯Çü ¾ÈµÇ¸é 2, 3¹øÂ° ¹®ÀÚ¸¦ È®ÀÎ
-// ¹®ÀÚ¿­¿¡ B°¡ ¾ø¾îÁú ¶§±îÁö ¹İº¹
+import java.util.Arrays;
+
+public class Ex2 {
+
+
+    public static void main(String[] args) {
+        String S = "ABBCC";
+        String result = solution(S);
+
+        System.out.println("ê²°ê³¼: " + result);
+    }
+
+
+    private static String solution(String S) {
+	// 1, 2ë²ˆì§¸ ë¬¸ìë¥¼ í™•ì¸
+	// ë³€í˜• ê°€ëŠ¥í•˜ë©´ ë³€í˜•
+	// ë³€í˜• ì•ˆë˜ë©´ 2, 3ë²ˆì§¸ ë¬¸ìë¥¼ í™•ì¸
+	// ë¬¸ìì—´ì— Bê°€ ì—†ì–´ì§ˆ ë•Œê¹Œì§€ ë°˜ë³µ
+
+
+    }
+
+}
+

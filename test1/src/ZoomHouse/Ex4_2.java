@@ -2,7 +2,7 @@ package ZoomHouse;
 
 import java.util.Arrays;
 
-public class Ex4 {
+public class Ex4_2 {
 
 
     public static void main(String[] args) {
@@ -32,6 +32,15 @@ public class Ex4 {
         }
 
         return perimeter;
+    }
+
+    private static boolean checkTriangle(int[] A, int p, int q, int r) {
+        if (A[p] + A[q] > A[r]) {
+            //triangle
+            return true;
+        } else {
+
+        }
     }
 
 

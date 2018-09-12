@@ -1,4 +1,4 @@
-package Zoom;
+package ZoomHouse;
 
 public class Ex3 {
 

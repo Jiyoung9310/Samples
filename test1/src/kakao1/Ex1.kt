@@ -1,6 +1,6 @@
 package kakao1
 
-
+//비밀지도
 fun main(args: Array<String>) {
     val n = 6
     val arr1 = listOf(46, 33, 33 ,22, 31, 50)

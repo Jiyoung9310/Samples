@@ -37,10 +37,11 @@ public class Ex4_2 {
     private static boolean checkTriangle(int[] A, int p, int q, int r) {
         if (A[p] + A[q] > A[r]) {
             //triangle
-            return true;
+
         } else {
 
         }
+        return true;
     }
 
 

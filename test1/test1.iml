@@ -7,6 +7,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
     <orderEntry type="jdk" jdkName="JavaSE-1.8" jdkType="JavaSDK" />
+=======
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
+>>>>>>> 483518bf829444f7b0969adb593b3dbf2c452d1a
   </component>
 </module>

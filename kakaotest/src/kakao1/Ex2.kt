@@ -21,11 +21,24 @@ fun solution(dartResult: String): List<String> {
         score.add(groupMatcher.group())
         println(groupMatcher.group())
     }
+    // 점수를 계산한다.
+    var result = 0
+    for(s in score) {
+        val p = Pattern.compile("(^[0-9]*$)").matcher(s).group().toInt()
+        if(s.contains('S')) {
+            result = p
+        } else if (s.contains('D')) {
+            result = p * p
+        } else if (s.contains('T')) {
+            result = p * p * p
+        }
+    }
 
     // 결과 리턴
 
     return score
 }
+
 
 
 
